@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        .box1{
+            height: 200px;
+            width: 200px;
+            background-color: yellow;
+            border-radius: 50% 50% 0 50%;
+            position: absolute;
+        }
+        .box2{
+            height: 200px;
+            width: 200px;
+            background-color: green;
+            border-radius: 0 0 50% 50%;
+            position: absolute;
+            animation: box2 0.5s forwards linear;
+        }
+        .box3{
+            height: 200px;
+            width: 200px;
+            background-color: yellow;
+            border-radius: 50% 50% 50% 0;
+            position: absolute;
+            animation: box3 1s forwards linear;
+            z-index: -2;
+        }
+        .box4{
+            height: 200px;
+            width: 200px;
+            background-color: yellow;
+            border-radius: 0 50% 50% 50% ;
+            position: absolute;
+            animation: box4 2s forwards linear;
+
+        }
+        .box5{
+            height: 200px;
+            width: 200px;
+            background-color: green;
+            border-radius: 50% 50% 0 0;
+            position: absolute;
+            animation: box5 2.5s forwards linear;
+            z-index: -5;
+        }
+        .box6{
+            height: 200px;
+            width: 200px;
+            background-color: yellow;
+            border-radius: 50% 0 50% 50% ;
+            position: absolute;
+            animation: box6 3s forwards linear;
+            z-index: -6;
+        }
+        .box7{
+            height: 200px;
+            width: 200px;
+            background-color: green;
+            border-radius: 50% 0 0 50% ;
+            position: absolute;
+            animation: box7 1.5s forwards linear;
+            z-index: -4;
+        }
+        .box8{
+            height: 200px;
+            width: 200px;
+            background-color: green;
+            border-radius: 0 50% 50% 0 ;
+            position: absolute;
+            animation: box8 3.5s forwards linear;
+            z-index: -7;
+        }
+        .circle{
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+            animation: circle 1s forwards linear;
+            z-index: -2;
+        }
+        @keyframes box2{
+            0%{
+                margin-top: 0;
+                margin-left: 0;
+            }
+            100%{
+                margin-top: 0;
+                margin-left: 660px;
+            }
+        }
+        @keyframes circle{
+            0%{
+                margin-top: 0;
+                margin-left: 0;
+            }
+            50%{
+                margin-top: 0;
+                margin-left: 660px;
+            }
+            100%{
+                margin-top: 250px;
+                margin-left: 660px;
+            }
+        }
+        @keyframes box3{
+            0%{
+                margin-top: 0;
+                margin-left: 0;
+            }
+            50%{
+                margin-top: 0;
+                margin-left: 660px;
+            }
+            100%{
+                margin-top: 0px;
+                margin-left: 1320px;
+            }
+        }
+        @keyframes box7{
+            0%{
+                margin-top: 0;
+                margin-left: 0;
+            }
+            33.33%{
+                margin-top: 0;
+                margin-left: 660px;
+            }
+            66.66%{
+                margin-top: 0px;
+                margin-left: 1320px;
+            }
+            100%{
+                margin-top: 250px;
+                margin-left: 1320px;
+            }
+        }
+        @keyframes box4{
+            0%{
+                margin-top: 0;
+                margin-left: 0;
+            }
+            25%{
+                margin-top: 0;
+                margin-left: 660px;
+            }
+            50%{
+                margin-top: 0px;
+                margin-left: 1320px;
+            }
+            75%{
+                margin-top: 250px;
+                margin-left: 1320px;
+            }
+            100%{
+                margin-top: 500px;
+                margin-left: 1320px;
+            }
+        }
+        @keyframes box5{
+            0%{
+                margin-top: 0;
+                margin-left: 0;
+            }
+            20%{
+                margin-top: 0;
+                margin-left: 660px;
+            }
+            40%{
+                margin-top: 0px;
+                margin-left: 1320px;
+            }
+            60%{
+                margin-top: 250px;
+                margin-left: 1320px;
+            }
+            80%{
+                margin-top: 500px;
+                margin-left: 1320px;
+            }
+            100%{
+                margin-top: 500px;
+                margin-left: 660px;
+            }
+        }
+        @keyframes box6{
+            0%{
+                margin-top: 0;
+                margin-left: 0;
+            }
+            16.66%{
+                margin-top: 0;
+                margin-left: 660px;
+            }
+            33.33%{
+                margin-top: 0px;
+                margin-left: 1320px;
+            }
+            50%{
+                margin-top: 250px;
+                margin-left: 1320px;
+            }
+            66.66%{
+                margin-top: 500px;
+                margin-left: 1320px;
+            }
+            83.33%{
+                margin-top: 500px;
+                margin-left: 660px;
+            }
+            100%{
+                margin-top: 500px;
+                margin-left: 0;
+            }
+        }
+        @keyframes box8{
+            0%{
+                margin-top: 0;
+                margin-left: 0;
+            }
+            15.28%{
+                margin-top: 0;
+                margin-left: 660px;
+            }
+            28.57%{
+                margin-top: 0px;
+                margin-left: 1320px;
+            }
+            42.85%{
+                margin-top: 250px;
+                margin-left: 1320px;
+            }
+            57.14%{
+                margin-top: 500px;
+                margin-left: 1320px;
+            }
+            71.42%{
+                margin-top: 500px;
+                margin-left: 660px;
+            }
+            85.71%{
+                margin-top: 500px;
+                margin-left: 0;
+            }
+            100%{
+                margin-top: 250px;
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="circle"></div>
+    <div class="box3"></div>
+    <div class="box7"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+    <div class="box6"></div>
+    <div class="box8"></div>
+</body>
+</html>

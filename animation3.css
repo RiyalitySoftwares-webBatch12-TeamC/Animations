@@ -1,0 +1,169 @@
+body{
+    background-image: url(ground.jpeg);
+    background-size: cover;
+    position: fixed;
+}
+.circle{
+    position: fixed;
+    margin: auto;
+    border: 5px solid rgba(88, 28, 28, 0.729);
+    height: 200px;
+    width: 250px;
+    border-radius: 50%;
+    top: 380px;
+    left: 700px;
+}
+.marbel{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-image: url(marble.jpeg);
+    background-size: cover;
+    display: inline-block;
+    position: absolute;
+}
+.m1{
+    animation: m1 .5s forwards;
+    top: 100px;
+    left: 20px;
+}
+
+.m2{
+    animation: m2 .5s .4s forwards;
+    top: 30px;
+    left: 30px;
+}
+.m3{
+    animation: m3 .5s forwards;
+    top: 10px;
+    left: 90px;
+}
+.m4{
+    animation: m4 .5s .4s forwards;
+    top: 25px;
+    left: 150px;
+}
+.m5{
+    animation: m5 .5s .4s forwards;
+    top: 70px;
+    left: 190px;
+}
+.m6{
+    animation: m6 .5s forwards;
+    top: 120px;
+    left: 160px;
+}
+.m7{
+    animation: m7 .5s forwards;
+    top: 140px;
+    left: 80px;
+}
+.m8{
+    animation: m8 .5s forwards;
+    top: 70px;
+    left: 100px;
+}
+
+@keyframes m1{
+    from{
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    to{
+        margin-top: -40px;
+        margin-left: 20px;
+    }
+}
+
+@keyframes m2{
+    from{
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    to{
+        margin-top: -70px;
+        margin-left: -50px;
+    }
+}
+@keyframes m4{
+    from{
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    to{
+        margin-top: -30px;
+        margin-left: 50px;
+    }
+}
+@keyframes m5{
+    from{
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    to{
+        margin-top: 20px;
+        margin-left: 70px;
+    }
+}
+@keyframes m6{
+    from{
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    to{
+        margin-top: 70px;
+        margin-left: 100px;
+    }
+}
+@keyframes m7{
+    from{
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    to{
+        margin-top: 100px;
+        margin-left: 200px;
+    }
+}
+@keyframes m8{
+    from{
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    to{
+        margin-top: -5px;
+        margin-left: 60px;
+    }
+}
+
+
+
+.marbel_king{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-image: url(marble_king.jpeg);
+    background-size: cover;
+    position: absolute;
+    top: 650px;
+    left: 200px;
+    animation: marbel_king .5s  forwards;
+}
+
+@keyframes marbel_king{
+    0%{
+        
+    }
+    25%{
+        margin-top: -170px;
+        margin-left: 620px;
+    }
+    50%{
+        margin-top: -320px;
+        margin-left: 700px;
+    }
+    100%{
+        margin-top: -350px;
+        margin-left: 720px;
+    }
+}

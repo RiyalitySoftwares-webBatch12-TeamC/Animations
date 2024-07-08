@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        .box1{
+            height: 150px;
+            width: 150px;
+            background-color: red;
+            position: fixed;
+            top: 0;
+            left: 0;
+            animation: box1 0.5s;
+        }
+        .box2{
+            height: 150px;
+            width: 150px;
+            background-color: blue;
+            position: fixed;
+            top: 0;
+            animation: box1 0.5s 0.8s;
+            right: 0;
+        }
+        .box3{
+            height: 150px;
+            width: 150px;
+            background-color: orchid;
+            position: fixed;
+            bottom: 0;
+            animation: box1 0.5s 1.6s;
+            right: 0;
+        }
+        .box4{
+            height: 150px;
+            width: 150px;
+            background-color: green;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            animation: box1 0.5s 2.8s;
+        }
+        .circle{
+            height: 80px;
+            width: 80px;
+            background-color: yellow;
+            position: absolute;
+            border-radius: 50%;
+            animation: circle 4s ;
+            margin-top: 40px;
+            margin-left: 40px;
+        }
+        @keyframes circle{
+            0%{
+                margin-top: 40px;
+                margin-left: 40px;
+            }
+            25%{
+                margin-top: 40px;
+                margin-left: 1400px;
+            }
+            50%{
+                margin-top: 600px;
+                margin-left: 1400px;
+            }
+            75%{
+                margin-top: 600px;
+                margin-left: 40px;
+            }
+            100%{
+                margin-top: 40px;
+                margin-left: 40px;
+            }
+        }
+        @keyframes box1{
+            from{
+                height: 150px;
+                width: 150px;
+            }
+            to{
+                width: 200px;
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="circle"></div>
+</body>
+</html>     

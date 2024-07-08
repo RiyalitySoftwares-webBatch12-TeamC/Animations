@@ -1,0 +1,20 @@
+.box1{
+    background-color: red;
+    border-radius: 50%;
+    animation: ball 20ms infinite;
+    margin: 300px auto;
+}
+
+@keyframes ball{
+    from{
+        height: 0;
+        width: 0;
+        border-radius: 50%;
+        margin-top: 0px;
+    }
+    to{
+        height: 500px;
+        width: 500px;
+        border-radius: 50%;
+    }
+}

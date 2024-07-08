@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        .box1{
+            height: 150px;
+            width: 150px;
+            position: absolute;
+            top: 270px;
+            left: 700px;
+            background-color: red;
+            animation: box1 1s linear alternate 2;
+        }
+        .box2{
+            height: 150px;
+            width: 150px;
+            position: absolute;
+            top: 270px;
+            left: 700px;
+            background-color: green;
+            animation: box2 1s linear alternate 2;
+        }
+        .box3{
+            height: 150px;
+            width: 150px;
+            position: absolute;
+            top: 270px;
+            left: 700px;
+            background-color: blue;
+            animation: box3 1s linear alternate 2;
+        }
+        .box4{
+            height: 150px;
+            width: 150px;
+            position: absolute;
+            top: 270px;
+            left: 700px;
+            background-color: orchid;
+            animation: box4 1s linear alternate 2;
+        }
+        .circle{
+            background-color: yellow;
+            height: 220px;
+            width: 220px;
+            border-radius: 50%;
+            position: absolute;
+            top: 235px;
+            left: 665px;
+        }
+        @keyframes box1{
+            from{
+                margin-top: 0;
+                margin-left: 0px;
+            }
+            to{
+                margin-top: -260px;
+                margin-left: -690px;
+                transform: rotate(360deg);
+            }
+        }
+        @keyframes box2{
+            from{
+                margin-top: 0;
+                margin-left: 0px;
+            }
+            to{
+                margin-top: 270px;
+                margin-left: 680px;
+                transform: rotate(-360deg);
+            }
+        }
+        @keyframes box3{
+            from{
+                margin-top: 0;
+                margin-left: 0px;
+            }
+            to{
+                margin-top: -260px;
+                margin-left: 680px;
+                transform: rotate(-360deg);
+            }
+        }
+        @keyframes box4{
+            from{
+                margin-top: 0;
+                margin-left: 0px;
+            }
+            to{
+                margin-top: 270px;
+                margin-left: -690px;
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="circle"></div>
+</body>
+</html>

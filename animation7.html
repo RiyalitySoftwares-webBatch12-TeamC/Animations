@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .tier{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-image: radial-gradient(white 0%,white 50%,black 50%,black 100%);
+            transform: translateY(200px);
+            position: fixed;
+            animation: car 4s forwards;
+            border: 2px solid white;
+            border-bottom: 5px solid white;
+        }
+        body{
+            display: flex;
+        }
+        .t2{
+            transform: translateY(190px);
+            z-index: -1;
+            left: 30px;
+        }
+        .t3{
+            transform: translateY(190px);
+            z-index: -1;
+            left: 230px;
+        }
+        .t4{
+            left: 200px;
+        }
+        .car{
+            height: 150px;
+            width: 350px;
+            border: 4px solid black;
+            border-radius: 150px 150px 50% 50%;
+            z-index: -2;
+            position: fixed;
+            top: 100px;
+            left: -10px;
+            background-color: red;
+            animation: car1 4s forwards;
+        }
+        .windows{
+            position: relative;
+            border: 2px solid black;
+            background-color: white;
+            height: 50px;
+            width: 70px;
+            border-radius: 40%;
+        }
+        .w1{
+            top: 20px;
+            left: 230px;
+        }
+        .w2{
+            top: -30px;
+            left: 70px;
+            border-radius: 20px;
+        }
+        @keyframes car{
+            0%{
+                margin-left: 0px;
+            }
+            50%{
+                margin-top: 200px;
+                transform: rotate(180deg);
+            }
+            100%{
+                margin-left: 1150px;
+                margin-top: 200px;
+                transform: rotate(360deg);
+            }
+        }
+        @keyframes car1{
+            from{
+                margin-left: 0px;
+            }
+            to{
+                margin-left: 1150px;
+            }
+        }
+        .road{
+            width: 100%;
+            height: 300px;
+            background-image: repeating-linear-gradient(black 0%,black 5%,white 5%,white 8%,black 8%, black 42%);
+            z-index: -10;
+            position: fixed;
+            top: 70px;
+        }
+    </style>
+</head>
+<body>
+    <div class="tier t1">
+
+    </div>
+    <div class="tier t2">
+
+    </div>
+    <div class="tier t3">
+
+    </div>
+    <div class="tier t4">
+
+    </div>
+    <div class="car">
+        <div class="windows w1">
+
+        </div>
+        <div class="windows w2">
+
+        </div>
+    </div>
+    <div class="road">
+
+    </div>
+</body>
+</html>

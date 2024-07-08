@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        .box1{
+            height: 200px;
+            width: 200px;
+            background-color: green;
+            position: absolute;
+            animation: box1 1s forwards;
+        }
+        .box2{
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+            position: absolute;
+            animation: box2 2s forwards;
+
+        }
+        .box3{
+            height: 200px;
+            width: 200px;
+            background-color: orchid;
+            position: absolute;
+            animation: box3 3s forwards;
+
+        }
+        .box4{
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            position: absolute;
+            animation: box4 4s forwards;
+        }
+        @keyframes box1{
+            form{
+                margin-top: 0;
+                margin-left: 0;
+            }
+            to{
+                margin-top: 0;
+                margin-left: 1320px;
+            }
+        }
+        @keyframes box2{
+            0%{
+                margin-top: 0;
+                margin-left: 0;
+            }
+            50%{
+                margin-top: 0;
+                margin-left: 1320px;
+            }
+            100%{
+                margin-top: 520px;
+                margin-left: 1320px;
+            }
+        }
+        @keyframes box3{
+            0%{
+                margin-top: 0;
+                margin-left: 0;
+            }
+            33.33%{
+                margin-top: 0;
+                margin-left: 1320px;
+            }
+            66.66%{
+                margin-top: 520px;
+                margin-left: 1320px;
+            }
+            100%{
+                margin-top: 520px;
+                margin-left: 0;
+            }
+        }
+        @keyframes box4{
+            0%{
+                margin-top: 0;
+                margin-left: 0;
+            }
+            25%{
+                margin-top: 0;
+                margin-left: 1320px;
+            }
+            50%{
+                margin-top: 520px;
+                margin-left: 1320px;
+            }
+            75%{
+                margin-top: 520px;
+                margin-left: 0;
+            }
+            100%{
+                margin-top: 0;
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+</body>
+</html>
